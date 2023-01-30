@@ -1,0 +1,28 @@
+컨트롤러 - 웹 어플리케이션의 첫 진입점
+
+MVC와 템플릿 엔진 - JSP, PHP
+
+서버끼리 통신할 때 html이 필요없으므로 api방식으로 많이 전달한다
+
+•정적 컨텐츠
+스프링부트에서 자동으로 지원함 html파일
+
+•MVC와 템플릿 엔진
+viewResolver view에서 해결해주는것
+
+•API 방식
+@ResponseBody - http의 body부에 데이터를 직접 넣어주겠다는 의미(html의 body부가 아님)
+
+•TDD - 테스트주도개발
+- 테스트를 먼저 만들고 구현클래스를 만들어서 돌려보는 것
+
+•• 단축키 ••
+Alt + Insert - generate(getter, setter)
+ctrl + f5 - 서버 재구동
+ctrl + shift + enter - 자동완성
+sout 입력후 Ctrl + Space
+alt + enter - static import
+Shift + F6 - 변수명 일괄 수정
+ctrl + alt + v - optional 자동완성
+ctrl + alt + shift + T - 리펙토링 관련
+ctrl + shift + T - 테스트클래스 생성
