@@ -4,6 +4,8 @@ import hello.hellospring.domain.Member;
 
 import java.util.*;
 
+//@Repository
+//@Component가 @Repository 안에 있음
 public class MemoryMemberRepository implements MemberRepository{
 
     private static Map<Long, Member> store = new HashMap<>();

@@ -16,6 +16,12 @@ viewResolver view에서 해결해주는것
 •TDD - 테스트주도개발
 - 테스트를 먼저 만들고 구현클래스를 만들어서 돌려보는 것
 
+• 멤버 컨트롤러가 멤버 서비스를 의존한다.
+
+• 컨트롤러를 통해서 외부요청을 받고 -> 서비스에서 비즈니스 로직을 만들고 -> 리포지토리에서 데이터를 저장한다.
+
+• 컴포넌트 스캔 - 같은 패키지 스캔
+
 •• 단축키 ••
 Alt + Insert - generate(getter, setter)
 ctrl + f5 - 서버 재구동
@@ -26,3 +32,4 @@ Shift + F6 - 변수명 일괄 수정
 ctrl + alt + v - optional 자동완성
 ctrl + alt + shift + T - 리펙토링 관련
 ctrl + shift + T - 테스트클래스 생성
+ctrl + E - 최근에 봤던 목록

@@ -2,14 +2,24 @@ package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
-import hello.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.Optional;
 
+//@Service
+//@Component가 @Service 안에 있음
+//순수 자바코드여서 스프링에서 서비스라고 판단할 수 없으므로 @Service 애노테이션 필요하다.
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    //private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    @Autowired //스프링 뜰 때 서비스인것을 확인하고 스프링 컨테이너에 있는 MemberRepository를 넣어줌 (DI)
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
+    //테스트코드와 같은 Repository 인스턴스 사용하게 한다.
 
     /**
      * 회원 가입
