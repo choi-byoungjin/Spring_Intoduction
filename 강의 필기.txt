@@ -33,3 +33,4 @@ ctrl + alt + v - optional 자동완성
 ctrl + alt + shift + T - 리펙토링 관련
 ctrl + shift + T - 테스트클래스 생성
 ctrl + E - 최근에 봤던 목록
+ctrl + shift + n - 파일명 검색

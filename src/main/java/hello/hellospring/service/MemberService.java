@@ -4,12 +4,14 @@ import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
 //@Service
 //@Component가 @Service 안에 있음
 //순수 자바코드여서 스프링에서 서비스라고 판단할 수 없으므로 @Service 애노테이션 필요하다.
+@Transactional  // jpa를 사용할 때 트랜잭션이 필요하다.
 public class MemberService {
 
     //private final MemberRepository memberRepository = new MemoryMemberRepository();
